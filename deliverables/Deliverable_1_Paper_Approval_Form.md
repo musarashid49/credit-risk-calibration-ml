@@ -2,7 +2,7 @@
 
 **National University of Computer & Emerging Sciences (Chiniot-Faisalabad Campus)**  
 **Course:** CL3001 – Machine Learning Lab (Spring 2026)  
-**Student Name:** Musa Rashid  
+**Student Name:** Musa Rashid (23F-0039)  
 **Instructor:** Ms. Esha Iftikhar  
 **Date:** October 29, 2026  
 
