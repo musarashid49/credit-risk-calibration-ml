@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Deliverable 1 - Paper Approval Form (CL3001)</title>
+  <style>
+    @page {
+      size: A4;
+      margin: 15mm 18mm;
+    }
+    body {
+      font-family: "Times New Roman", Times, Georgia, serif;
+      font-size: 10.5pt;
+      line-height: 1.38;
+      color: #111;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    .header {
+      text-align: center;
+      border-bottom: 2px solid #1a365d;
+      padding-bottom: 8px;
+      margin-bottom: 12px;
+    }
+    .header h1 {
+      font-size: 14pt;
+      margin: 0 0 3px 0;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      color: #1a365d;
+    }
+    .header h2 {
+      font-size: 11.5pt;
+      margin: 0 0 4px 0;
+      font-weight: bold;
+    }
+    .meta-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 10px;
+      font-size: 10pt;
+    }
+    .meta-table td {
+      padding: 4px 8px;
+      border: 1px solid #cbd5e1;
+    }
+    .meta-table td.label {
+      font-weight: bold;
+      background-color: #f8fafc;
+      width: 22%;
+    }
+    h3 {
+      font-size: 11pt;
+      color: #1a365d;
+      border-bottom: 1px solid #cbd5e1;
+      padding-bottom: 2px;
+      margin: 10px 0 6px 0;
+      text-transform: uppercase;
+    }
+    p, ul {
+      margin: 4px 0 6px 0;
+    }
+    ul {
+      padding-left: 18px;
+    }
+    li {
+      margin-bottom: 3px;
+    }
+    a {
+      color: #1d4ed8;
+      text-decoration: none;
+    }
+    .signature-box {
+      margin-top: 14px;
+      display: flex;
+      justify-content: space-between;
+      font-size: 10pt;
+      padding-top: 10px;
+      border-top: 1px dashed #94a3b8;
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <h1>National University of Computer &amp; Emerging Sciences (FAST-NUCES)</h1>
+    <h2>Chiniot-Faisalabad Campus &mdash; CL3001: Machine Learning Lab (Spring 2026)</h2>
+    <div><strong>Deliverable 1: Semester Project Paper Approval Form</strong></div>
+  </div>
+
+  <table class="meta-table">
+    <tr>
+      <td class="label">Student Name:</td>
+      <td>Musa Rashid</td>
+      <td class="label">Instructor:</td>
+      <td>Ms. Esha Iftikhar</td>
+    </tr>
+    <tr>
+      <td class="label">Application Area:</td>
+      <td>Finance &amp; FinTech (Credit Risk)</td>
+      <td class="label">GitHub Repository:</td>
+      <td><a href="https://github.com/musarashid49/credit-risk-calibration-ml">github.com/musarashid49/credit-risk-calibration-ml</a></td>
+    </tr>
+  </table>
+
+  <h3>1. Selected Research Paper (2026 Peer-Reviewed Journal)</h3>
+  <ul>
+    <li><strong>Paper Title:</strong> <em>Performance Evaluation of Machine Learning and Deep Learning Models for Credit Risk Prediction</em></li>
+    <li><strong>Authors:</strong> Irvine Mapfumo and Thokozani Shongwe (University of Johannesburg)</li>
+    <li><strong>Journal &amp; Date:</strong> <em>Journal of Risk and Financial Management</em> (MDPI), Vol. 19, Issue 3, Article 210 (<strong>Published: March 2026</strong>)</li>
+    <li><strong>Paper Link (DOI):</strong> <a href="https://doi.org/10.3390/jrfm19030210">https://doi.org/10.3390/jrfm19030210</a></li>
+  </ul>
+
+  <h3>2. Publicly Available Datasets Used</h3>
+  <ul>
+    <li><strong>Dataset 1 &mdash; Taiwanese Credit Card Default Dataset (UCI ML Repository):</strong>
+      <a href="https://archive.ics.uci.edu/dataset/350/default+of+credit+card+clients">https://archive.ics.uci.edu/dataset/350/default+of+credit+card+clients</a><br/>
+      Contains <strong>30,000 client records</strong> and <strong>24 financial features</strong> (credit limit, demographics, 6 months of repayment status and bill statements). Imbalanced binary target: 77.88% Non-Default vs. 22.12% Default.
+    </li>
+    <li><strong>Dataset 2 &mdash; Statlog German Credit Dataset (UCI ML Repository):</strong>
+      <a href="https://archive.ics.uci.edu/dataset/144/statlog+german+credit+data">https://archive.ics.uci.edu/dataset/144/statlog+german+credit+data</a><br/>
+      Contains <strong>1,000 loan applicant records</strong> and <strong>20 financial/demographic features</strong>. Imbalanced binary target: 70.0% Good Credit Risk vs. 30.0% Bad Credit Risk (Default).
+    </li>
+  </ul>
+
+  <h3>3. Alignment with Course Methodology &amp; Reported Metrics</h3>
+  <ul>
+    <li><strong>Pre-Processing &amp; Class Balancing:</strong> Feature scaling, encoding, and hybrid resampling comparing <strong>SMOTE</strong>, <strong>ENN</strong> (Edited Nearest Neighbors), and <strong>SMOTE-ENN</strong>.</li>
+    <li><strong>Classification Models Taught in Course:</strong> Logistic Regression (LR), Decision Tree (DT), Support Vector Machine (SVM), Random Forest (RF), AdaBoost, XGBoost, and Multilayer Perceptron (MLP).</li>
+    <li><strong>Evaluation Protocol &amp; Baseline Metrics:</strong> 10-fold stratified cross-validation reporting Accuracy, Precision, Recall, F1-Score, and ROC-AUC (reporting <strong>95.4% Accuracy / 0.928 F1</strong> with MLP + SMOTE-ENN on German Credit, and <strong>82.1% Accuracy / 0.789 F1</strong> with Random Forest + SMOTE-ENN on Taiwanese Credit).</li>
+  </ul>
+
+  <h3>4. Reason for Selection &amp; Planned Improvement (Step 6 &amp; Step 7)</h3>
+  <p>
+    We selected this March 2026 study because automated credit risk underwriting is a vital real-world financial problem, its tabular datasets are fully reproducible on standard compute, and it presents a compelling scientific opportunity for <strong>Step 6 (Critical Analysis)</strong> and <strong>Step 7 (Bonus Improvement)</strong>:
+  </p>
+  <ul>
+    <li><strong>Critical Replication Audit:</strong> Hybrid resampling (SMOTE-ENN) applied prior to cross-validation splits causes boundary leakage, and altering class priors distorts predicted <strong>Probability of Default (PD)</strong> estimates required under Basel III banking standards.</li>
+    <li><strong>Proposed Improvement:</strong> We will implement a strict in-fold resampling pipeline paired with <strong>Isotonic/Platt Probability Calibration</strong> (evaluated via Brier Score and Expected Calibration Error) and <strong>Instance-Dependent Cost-Sensitive Thresholding</strong> using each borrower's actual credit limit (<code>LIMIT_BAL</code>) to minimize total financial portfolio loss.</li>
+  </ul>
+
+  <div class="signature-box">
+    <div><strong>Student Signature:</strong> ___________________________</div>
+    <div><strong>Instructor Approval:</strong> ___________________________</div>
+    <div><strong>Date:</strong> _______________</div>
+  </div>
+</body>
+</html>
